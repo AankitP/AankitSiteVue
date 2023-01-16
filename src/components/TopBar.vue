@@ -2,10 +2,11 @@
   <div class="header">
     <h1 class="myName">Aankit Pokhrel</h1>
     <div class="bold-color">
+      <button @click="Clicked" class="LinkedButton">Home</button>
       <button @click="Clicked" class="LinkedButton">Projects</button>
       <button href="https://github.com/AankitP" @click="OpenGitHub" class="LinkedButton">Github</button>
       <button @click="Clicked" class="LinkedButton">About Me</button>
-      <button @click="Clicked" class="LinkedButton">Other Site Versions</button>
+      <button @click="Clicked" class="LinkedButton">Contact</button>
       <button href="./../assets/Aankit_Pokhrel_Resume.pdf" @click="OpenResume" class="LinkedButton">Resume</button>
         <!--This will be used for when I refactor the code and host the refactor -->
     </div>
@@ -35,12 +36,12 @@ export default {
 
 <style scoped>
 .bold-color {
-  color: #ffffff;
+  color: aquamarine;
   font-weight: 800;
   display: flex;
   list-style: none;
   align-items: center;
-  /* margin-right: 1rem; */
+  margin-right: .3rem;
 }
 .header {
   position: flex;
@@ -53,7 +54,7 @@ export default {
 }
 
 h1 {
-  color: #ffffff;
+  color: aquamarine;
   font-size: 1.55rem;
   padding: 1rem;
   padding-left: 2rem;
@@ -65,13 +66,13 @@ h1 {
 .LinkedButton{
   background: none;
   border: none;
-  color: #ffffff;
+  color: aquamarine;
   font-weight: 800;
   padding: 1rem;
 }
 
 .LinkedButton:hover {
-  background: #3a3737;
+  background: #4174ff;
 }
 
 .header li {

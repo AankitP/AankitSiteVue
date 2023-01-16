@@ -4,7 +4,7 @@
       <TopBar class="topBar"/>
     </header>
     <div class="Content">
-      <AboutMe class="aboutMe"/>
+      <Home class="aboutMe"/>
     </div>
   </div>
 </template>
@@ -12,14 +12,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import TopBar from "./components/TopBar.vue";
-import AboutMe from "./components/AboutMe.vue";
+import Home from "./components/Home.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     TopBar,
-    AboutMe,
+    Home,
   },
 };
 </script>
