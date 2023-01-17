@@ -1,20 +1,41 @@
 <template>
-    <div>
-        
-    </div>
+    <slot></slot>
 </template>
 
 <script>
-// import { defineComponent } from '@vue/composition-api'
-
-export default{
-    name: "ProjHolder",
-    setup() {
-        
-    },
-}
+export default {
+  name: "ProjHolder",
+  setup() {},
+};
 </script>
 
-<style scoped>
+<style>
+
+    .allHolderProj{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5%;
+    }
+
+    .textHolderProj{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 60%;
+    }
+
+    h5{
+        margin-left: 1rem;
+    }
+
+    .ProjImg {
+        /* aspect-ratio: "original" !important; */
+        width: 100%;
+        max-height: auto;
+        border-radius: 1rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 
 </style>

@@ -3,45 +3,54 @@
     <header>
       <TopBar class="topBar"/>
     </header>
-    <div class="Content">
-      <!-- <Home class="aboutMe"/> -->
-      <ProjectsDone class="Projs"/>
-    </div>
+    <MainBox>
+      <Home/>
+    </MainBox>
+    <MainBox>
+      <ProjectsDone/>
+    </MainBox>
+    <!-- this is to embed the pdf, but it didn't work, will fix in later iteration -->
+    <!-- <MainBox class="PDFHolder">
+      <vue-pdf-embed :source="source1" :page="1" :width="200"/>
+    </MainBox> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import TopBar from "./components/TopBar.vue";
-// import Home from "./components/Home.vue";
+import MainBox from "./components/Reusable/MainBox.vue";
+import Home from "./components/Home.vue";
 import ProjectsDone from "./components/Projects.vue";
+// import VuePdfEmbed from 'vue-pdf-embed';
 
 export default {
   name: "App",
   components: {
-    // HelloWorld,
     TopBar,
-    // Home,
+    MainBox,
+    Home,
     ProjectsDone,
+    // VuePdfEmbed,
+  },
+  data(){
+    return{
+      compToShow: 'Home',
+      // source1: "Aankit_Pokhrel_Resume.pdf"
+    }
   },
 };
 </script>
 
-<style scoped>
-
-.allHolder {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
+<style>
+html{
   background-color: #175588;
 }
-
-content {
+.allHolder {
+  padding: 0 !important;
+  margin: 0 !important;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 100%;
+  background-color: #175588;
 }
 
 </style>
