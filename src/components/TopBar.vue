@@ -21,7 +21,7 @@ export default {
     },
     OpenResume(){
       console.log("Clicked Open Resume");
-      window.open("./Aankit_Pokhrel_Resume.pdf", '_blank');
+      window.open("Aankit_Pokhrel_Resume.pdf", '_blank');
     },
     OpenGitHub(){
       console.log("Clicked Open GitHub");
