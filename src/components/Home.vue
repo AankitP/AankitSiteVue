@@ -18,7 +18,7 @@
         </p>
       </div>
     </div>
-    <div class="PicOfMe">
+    <div class="picOfMe">
       <img src="./../assets/IMG_5899.jpg"/>
     </div>
   </div>
@@ -81,11 +81,18 @@ export default {
   height: 20rem;
   text-align: left;
 }
-img{
+
+.picOfMe{
   max-height: 40rem;
-  max-width: 40rem;
+  max-width: 25rem;
   margin-right: 10vw;
-  border-radius: 2rem;
-  aspect-ratio: "1.33";
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10%;
+  display: block;
+  aspect-ratio: "1.33" !important;
 }
 </style>

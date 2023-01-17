@@ -4,7 +4,8 @@
       <TopBar class="topBar"/>
     </header>
     <div class="Content">
-      <Home class="aboutMe"/>
+      <!-- <Home class="aboutMe"/> -->
+      <ProjectsDone class="Projs"/>
     </div>
   </div>
 </template>
@@ -12,14 +13,16 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import TopBar from "./components/TopBar.vue";
-import Home from "./components/Home.vue";
+// import Home from "./components/Home.vue";
+import ProjectsDone from "./components/Projects.vue";
 
 export default {
   name: "App",
   components: {
     // HelloWorld,
     TopBar,
-    Home,
+    // Home,
+    ProjectsDone,
   },
 };
 </script>
