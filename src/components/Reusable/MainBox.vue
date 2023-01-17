@@ -1,18 +1,17 @@
 <template>
-    <div class="holder">
-        {{props.children}}
-    </div>
+  <div class="holderBox">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
-  props: ['children'],
   name: "MainBox",
 };
 </script>
 
 <style scoped>
-.holder {
+.holderBox {
   margin: 4rem;
   margin-right: 4rem;
   margin-left: 4rem;

@@ -8,3 +8,4 @@ I will be using REACT and Vue to make the site:
 
 ### Some suggestions that have been made to better my site
  - The resume will be put in an s3 bucket
+ - Website will be hosted on AWS when complete

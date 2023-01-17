@@ -22,7 +22,7 @@ export default {
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 50%;
+        width: 60%;
     }
 
     h5{
@@ -30,11 +30,12 @@ export default {
     }
 
     .ProjImg {
-        aspect-ratio: "1.33" !important;
-        max-width: 15%;
-        max-height: 15%;
+        /* aspect-ratio: "original" !important; */
+        width: 100%;
+        max-height: auto;
         border-radius: 1rem;
         margin-right: 5%;
+        margin-left: 5%;
     }
 
 </style>

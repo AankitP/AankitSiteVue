@@ -2,13 +2,12 @@
   <div class="header">
     <h1 class="myName">Aankit Pokhrel</h1>
     <div class="bold-color">
-      <button @click="Clicked" class="LinkedButton">Home</button>
-      <button @click="Clicked" class="LinkedButton">Projects</button>
+      <button @click="displayComponent('Home')" class="LinkedButton">Home</button>
+      <button @click="displayComponent('ProjectsDone')" class="LinkedButton">Projects</button>
       <button href="https://github.com/AankitP" @click="OpenGitHub" class="LinkedButton">Github</button>
-      <button @click="Clicked" class="LinkedButton">About Me</button>
-      <button @click="Clicked" class="LinkedButton">Contact</button>
-      <button href="./../assets/Aankit_Pokhrel_Resume.pdf" @click="OpenResume" class="LinkedButton">Resume</button>
-        <!--This will be used for when I refactor the code and host the refactor -->
+      <button @click="displayComponent('AboutMe')" class="LinkedButton">About Me</button>
+      <button @click="displayComponent('Contact')" class="LinkedButton">Contact</button>
+      <button @click="OpenResume" class="LinkedButton">Resume</button>
     </div>
   </div>
 </template>
@@ -22,12 +21,17 @@ export default {
     },
     OpenResume(){
       console.log("Clicked Open Resume");
-      window.open("./../assets/Aankit_Pokhrel_Resume.pdf");
+      window.open("./../assets/Aankit_Pokhrel_Resume.pdf", 'target="_blank"');
     },
     OpenGitHub(){
       console.log("Clicked Open GitHub");
-      window.open("https://github.com/AankitP")
-    }
+      window.open("https://github.com/AankitP", 'target="_blank"');
+    },
+    displayComponent(componentToShow){
+      console.log("Clicked");
+      this.compToShow = componentToShow;
+      console.log(this.compToShow);
+    },
   },
   name: "TopBar",
 };
