@@ -9,9 +9,10 @@
     <MainBox>
       <ProjectsDone/>
     </MainBox>
-    <MainBox class="PDFHolder">
+    <!-- this is to embed the pdf, but it didn't work, will fix in later iteration -->
+    <!-- <MainBox class="PDFHolder">
       <vue-pdf-embed :source="source1" :page="1" :width="200"/>
-    </MainBox>
+    </MainBox> -->
   </div>
 </template>
 
@@ -20,7 +21,7 @@ import TopBar from "./components/TopBar.vue";
 import MainBox from "./components/Reusable/MainBox.vue";
 import Home from "./components/Home.vue";
 import ProjectsDone from "./components/Projects.vue";
-import VuePdfEmbed from 'vue-pdf-embed';
+// import VuePdfEmbed from 'vue-pdf-embed';
 
 export default {
   name: "App",
@@ -29,12 +30,12 @@ export default {
     MainBox,
     Home,
     ProjectsDone,
-    VuePdfEmbed,
+    // VuePdfEmbed,
   },
   data(){
     return{
       compToShow: 'Home',
-      source1: "Aankit_Pokhrel_Resume.pdf"
+      // source1: "Aankit_Pokhrel_Resume.pdf"
     }
   },
 };

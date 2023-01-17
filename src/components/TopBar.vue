@@ -21,11 +21,11 @@ export default {
     },
     OpenResume(){
       console.log("Clicked Open Resume");
-      window.open("./../assets/Aankit_Pokhrel_Resume.pdf", 'target="_blank"');
+      window.open("./Aankit_Pokhrel_Resume.pdf", '_blank');
     },
     OpenGitHub(){
       console.log("Clicked Open GitHub");
-      window.open("https://github.com/AankitP", 'target="_blank"');
+      window.open("https://github.com/AankitP", '_blank');
     },
     displayComponent(componentToShow){
       console.log("Clicked");
