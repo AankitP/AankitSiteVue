@@ -91,4 +91,8 @@ export default {
   min-width: 50vw;
   width: auto;
 }
+.ProjImg{
+  height: 40%;
+  width: 60%;
+}
 </style>
