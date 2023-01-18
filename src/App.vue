@@ -44,12 +44,17 @@ export default {
 <style>
 html{
   background-color: #175588;
+  width: auto;
+  height: auto;
+}
+body{
+  background-color: #175588;
 }
 .allHolder {
   padding: 0 !important;
   margin: 0 !important;
-  width: 100%;
-  min-height: 100%;
+  min-width: 120rem;
+  height: auto;
   background-color: #175588;
 }
 
