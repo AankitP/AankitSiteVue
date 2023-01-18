@@ -53,7 +53,7 @@ body{
 .allHolder {
   padding: 0 !important;
   margin: 0 !important;
-  min-width: 120rem;
+  min-width: 100rem;
   height: auto;
   background-color: #175588;
 }
