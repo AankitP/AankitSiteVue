@@ -21,6 +21,7 @@ import TopBar from "./components/TopBar.vue";
 import MainBox from "./components/Reusable/MainBox.vue";
 import Home from "./components/Home.vue";
 import ProjectsDone from "./components/Projects.vue";
+// import router from './router'
 // import VuePdfEmbed from 'vue-pdf-embed';
 
 export default {
