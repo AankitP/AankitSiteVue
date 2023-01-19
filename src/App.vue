@@ -1,13 +1,13 @@
 <template>
   <div class="allHolder">
     <header>
-      <TopBar class="topBar"/>
+      <TopBar class="topBar" @clicked="getPage"/>
     </header>
     <MainBox>
-      <Home/>
+      <home/>
     </MainBox>
     <MainBox>
-      <ProjectsDone/>
+      <projectsdone/>
     </MainBox>
     <!-- this is to embed the pdf, but it didn't work, will fix in later iteration -->
     <!-- <MainBox class="PDFHolder">
@@ -19,25 +19,29 @@
 <script>
 import TopBar from "./components/TopBar.vue";
 import MainBox from "./components/Reusable/MainBox.vue";
-import Home from "./components/Home.vue";
-import ProjectsDone from "./components/Projects.vue";
-// import router from './router'
-// import VuePdfEmbed from 'vue-pdf-embed';
+import home from "./components/Home.vue";
+import projectsdone from "./components/Projects.vue";
+
+var accessThis;
+
+// var View = {template: '<p>banana</p>'}
 
 export default {
   name: "App",
   components: {
     TopBar,
     MainBox,
-    Home,
-    ProjectsDone,
+    home,
+    projectsdone,
     // VuePdfEmbed,
   },
-  data(){
-    return{
-      compToShow: 'Home',
-      // source1: "Aankit_Pokhrel_Resume.pdf"
+  methods: {
+    getPage(value){
+      // console.log(value);
+      accessThis = value;
+      console.log(accessThis);
     }
+
   },
 };
 </script>
