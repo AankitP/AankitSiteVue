@@ -3,7 +3,7 @@
     <h1 class="myName">Aankit Pokhrel</h1>
     <div class="bold-color">
       <button @click="displayComponent('Home')" class="LinkedButton">Home</button>
-      <button @click="displayComponent('ProjectsDone')" class="LinkedButton">Projects</button>
+      <button @click="displayComponent('Projects')" class="LinkedButton">Projects</button>
       <button href="https://github.com/AankitP" @click="OpenGitHub" class="LinkedButton">Github</button>
       <button @click="displayComponent('AboutMe')" class="LinkedButton">About Me</button>
       <button @click="displayComponent('Contact')" class="LinkedButton">Contact</button>
@@ -28,9 +28,7 @@ export default {
       window.open("https://github.com/AankitP", '_blank');
     },
     displayComponent(componentToShow){
-      console.log("Clicked");
-      this.compToShow = componentToShow;
-      console.log(this.compToShow);
+      this.$emit('clicked', componentToShow);
     },
   },
   name: "TopBar",
