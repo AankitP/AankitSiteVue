@@ -38,5 +38,6 @@ h1{
   max-height: 40rem;
   width: 20rem;
   border-radius: 10%;
+  margin-top: 5%;
 }
 </style>

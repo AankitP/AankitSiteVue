@@ -2,11 +2,11 @@
   <div class="header">
     <h1 class="myName">Aankit Pokhrel</h1>
     <div class="bold-color">
-      <button @click="displayComponent('<home/>')" class="LinkedButton">Home</button>
-      <button @click="displayComponent('<projectsdone/>')" class="LinkedButton">Projects</button>
+      <button @click="displayComponent('Home')" class="LinkedButton">Home</button>
+      <button @click="displayComponent('Projects')" class="LinkedButton">Projects</button>
       <button href="https://github.com/AankitP" @click="OpenGitHub" class="LinkedButton">Github</button>
-      <button @click="displayComponent('<OofPage/>')" class="LinkedButton">About Me</button>
-      <button @click="displayComponent('<OofPage/>')" class="LinkedButton">Contact</button>
+      <button @click="displayComponent('AboutMe')" class="LinkedButton">About Me</button>
+      <button @click="displayComponent('Contact')" class="LinkedButton">Contact</button>
       <button @click="OpenResume" class="LinkedButton">Resume</button>
     </div>
   </div>

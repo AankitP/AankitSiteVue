@@ -4,44 +4,39 @@
       <TopBar class="topBar" @clicked="getPage"/>
     </header>
     <MainBox>
-      <home/>
+      <HomePage v-if="accessThis == 'Home'"/>
+      <ProjectsDone v-else-if="accessThis == 'Projects'"/>
+      <OofPage v-else/>
     </MainBox>
-    <MainBox>
-      <projectsdone/>
-    </MainBox>
-    <!-- this is to embed the pdf, but it didn't work, will fix in later iteration -->
-    <!-- <MainBox class="PDFHolder">
-      <vue-pdf-embed :source="source1" :page="1" :width="200"/>
-    </MainBox> -->
   </div>
 </template>
 
 <script>
 import TopBar from "./components/TopBar.vue";
 import MainBox from "./components/Reusable/MainBox.vue";
-import home from "./components/Home.vue";
-import projectsdone from "./components/Projects.vue";
+import HomePage from "./components/Home.vue";
+import ProjectsDone from "./components/Projects.vue";
+import OofPage from "./components/404Page.vue"
 
-var accessThis;
-
-// var View = {template: '<p>banana</p>'}
 
 export default {
+  data: function(){
+    return{
+      accessThis: "Home"
+    }
+  },
   name: "App",
   components: {
     TopBar,
     MainBox,
-    home,
-    projectsdone,
-    // VuePdfEmbed,
+    HomePage,
+    ProjectsDone,
+    OofPage,
   },
   methods: {
     getPage(value){
-      // console.log(value);
-      accessThis = value;
-      console.log(accessThis);
+      this.accessThis = value;
     }
-
   },
 };
 </script>
