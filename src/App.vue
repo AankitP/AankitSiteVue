@@ -6,6 +6,7 @@
     <MainBox>
       <HomePage v-if="accessThis == 'Home'"/>
       <ProjectsDone v-else-if="accessThis == 'Projects'"/>
+      <ContactPage v-else-if="accessThis == 'Contact'"/>
       <OofPage v-else/>
     </MainBox>
   </div>
@@ -16,7 +17,9 @@ import TopBar from "./components/TopBar.vue";
 import MainBox from "./components/Reusable/MainBox.vue";
 import HomePage from "./components/Home.vue";
 import ProjectsDone from "./components/Projects.vue";
-import OofPage from "./components/404Page.vue"
+import ContactPage from "./components/ContactAndSocials.vue";
+import OofPage from "./components/404Page.vue";
+
 
 
 export default {
@@ -31,6 +34,7 @@ export default {
     MainBox,
     HomePage,
     ProjectsDone,
+    ContactPage,
     OofPage,
   },
   methods: {
