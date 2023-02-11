@@ -11,9 +11,9 @@
           <div class="textHolderProj">
             <h3>
               Current Project:
-              <a href="https://github.com/AankitP/AankitSiteVue" target="_blank"
-                >Website Refactor</a
-              >
+              <a href="https://github.com/AankitP/AankitSiteVue" target="_blank">
+                Website Refactor
+              </a>
             </h3>
             <h5>
               &emsp;Originally this site was written in strictly HTML and CSS
@@ -36,8 +36,8 @@
           <div class="textHolderProj">
             <h3>
               Current Project:
-              <a href="https://github.com/AankitP/AankitSiteVue" target="_blank"
-                >CABStone</a
+              <a href="https://github.com/MoDNS/MoDNS" target="_blank"
+                >CABSTone</a
               >
             </h3>
             <h5>
