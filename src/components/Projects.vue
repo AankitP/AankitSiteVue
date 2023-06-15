@@ -11,19 +11,18 @@
           <div class="textHolderProj">
             <h3>
               Current Project:
-              <a href="https://github.com/AankitP/AankitSiteVue" target="_blank">
+              <a
+                href="https://github.com/AankitP/AankitSiteVue"
+                target="_blank"
+              >
                 Website Refactor
               </a>
             </h3>
             <h5>
-              &emsp;Originally this site was written in strictly HTML and CSS
-              (to be honest it didn't look the best). At the time I did not have
-              the knowledge to know how to make it look and function better. My
-              schedule had started to become more hectic with classes, homework,
-              and exams, so I had to put this project on the backburner until I
-              got the time to fix it. One day I was helping my cousin with a
-              site he was working on, and was introduced to vue, so I decided
-              that I would fix my website.
+              &emsp;Originally this site was written in strictly HTML and CSS. 
+              At the time I did not have the knowledge to know how to make it 
+              look and function better. I was introduced to REACT and finally 
+              had the ability to improve the function and looks of the website.
             </h5>
           </div>
           <img src="./../assets/VueSiteCode.png" class="ProjImg" />

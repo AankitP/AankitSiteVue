@@ -5,9 +5,14 @@
     <h1 class="hook">And I Build Things for Fun.</h1>
     <div class="shortDescription">
       <p>
-        I am A senior Cyber Engineering Major at Louisiana Tech university<br />
-        currently a working on my capstone<br />
-        and am Projected to graduate in May 2023
+        I gratuated with my bachelors in Cyber Engineering Major<br/>
+        from Louisiana Tech university. I am currently working at Pepsico.<br/>
+        I started my computer science journey in highschool,<br/>
+        taking my first programming class my freshman year.<br/> 
+        I started with JavaScript, and thten quickly made a move to<br/>
+        Java. 8.5 years later I have developed my programming and<br/>
+        problem starting skills to be able to solve any programming<br/>
+        task that comes my way.
       </p>
     </div>
   </div>
