@@ -9,7 +9,7 @@
         from Louisiana Tech university, and am currently working at Pepsico.<br/>
         my computer science journey in highschool,<br/>
         taking my first programming class my freshman year.<br/> 
-        beginning with with JavaScript, and thten quickly made a move to<br/>
+        beginning with with JavaScript, and then quickly made a move to<br/>
         Java. 8.5 years later I have developed my programming and<br/>
         problem starting skills to be able to solve any programming<br/>
         task that comes my way.
