@@ -5,11 +5,11 @@
     <h1 class="hook">And I Build Things for Fun.</h1>
     <div class="shortDescription">
       <p>
-        I gratuated with my bachelors in Cyber Engineering Major<br/>
-        from Louisiana Tech university. I am currently working at Pepsico.<br/>
-        I started my computer science journey in highschool,<br/>
+        I graduated with my bachelors in Cyber Engineering Major<br/>
+        from Louisiana Tech university, and am currently working at Pepsico.<br/>
+        my computer science journey in highschool,<br/>
         taking my first programming class my freshman year.<br/> 
-        I started with JavaScript, and thten quickly made a move to<br/>
+        beginning with with JavaScript, and thten quickly made a move to<br/>
         Java. 8.5 years later I have developed my programming and<br/>
         problem starting skills to be able to solve any programming<br/>
         task that comes my way.
