@@ -8,8 +8,8 @@
     <h1 class="Socials">Socials<br /></h1>
     <h1 class="PageDescriptor">Feel free to follow my socials:</h1>
     <div class="imgHolder">
-      <a href="https://www.linkedin.com/in/aankit-pokhrel/"><img src="../assets/linkedin.png" /></a>
-      <a href="https://www.instagram.com/aankit_pokhrel/"><img src="../assets/instagram.png" /></a>
+      <a href="https://www.linkedin.com/in/aankit-pokhrel/" target="_blank"><img src="../assets/linkedin.png" /></a>
+      <a href="https://www.instagram.com/aankit_pokhrel/" target="_blank"><img src="../assets/instagram.png" /></a>
     </div>
   </div>
 </template>
