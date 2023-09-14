@@ -5,11 +5,15 @@
     <h1 class="hook">And I Build Things for Fun.</h1>
     <div class="shortDescription">
       <p>
-        I hold a Bachelor's degree in Cyber Engineering from Louisiana Tech University<br/> 
-        and currently work at Pepsico. My journey in computer science began in high school,<br/> 
-        where I started with JavaScript and later shifted to Java. With over 8.5 years of <br/>
-        programming experience, I have developed strong programming and problem-solving skills, <br/>
-        enabling me to handle any programming task proficiently.<br/>
+        I hold a Bachelor's degree in Cyber Engineering from Louisiana Tech
+        University<br />
+        and currently work at Pepsico. My journey in computer science began in
+        high school,<br />
+        where I started with JavaScript and later shifted to Java. With over 8.5
+        years of <br />
+        programming experience, I have developed strong programming and
+        problem-solving skills, <br />
+        enabling me to handle any programming task proficiently.<br />
       </p>
     </div>
   </div>

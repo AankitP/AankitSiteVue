@@ -1,32 +1,40 @@
 <template>
   <div class="allHolder">
     <header>
-      <TopBar class="topBar" @clicked="getPage"/>
+      <TopBar class="topBar" @clicked="getPage" />
     </header>
     <MainBox>
-      <HomePage v-if="accessThis == 'Home'"/>
-      <ProjectsDone v-else-if="accessThis == 'Projects'"/>
-      <ContactPage v-else-if="accessThis == 'Contact'"/>
-      <OofPage v-else/>
+      <HomePage v-if="accessThis == 'Home'" />
+      <ProjectsDone v-else-if="accessThis == 'Projects'" />
+      <ContactPage v-else-if="accessThis == 'Contact'" />
+      <AboutMe v-else-if="accessThis == 'AboutMe'" />
+      <OofPage v-else />
     </MainBox>
   </div>
 </template>
-
 <script>
-import TopBar from "./components/TopBar.vue";
-import MainBox from "./components/Reusable/MainBox.vue";
-import HomePage from "./components/Home.vue";
-import ProjectsDone from "./components/Projects.vue";
-import ContactPage from "./components/ContactAndSocials.vue";
-import OofPage from "./components/404Page.vue";
+import TopBar from "./Desktop_components/TopBar.vue";
+import MainBox from "./Desktop_components/Reusable/MainBox.vue";
+import HomePage from "./Desktop_components/Home.vue";
+import ProjectsDone from "./Desktop_components/Projects.vue";
+import ContactPage from "./Desktop_components/ContactAndSocials.vue";
+import OofPage from "./Desktop_components/404Page.vue";
+import AboutMe from "./Desktop_components/AboutMe.vue";
 
-
+const detectDeviceType = () =>
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+    ? "Mobile"
+    : "Desktop";
+console.log(detectDeviceType()); // "Mobile" or "Desktop"
 
 export default {
-  data: function(){
-    return{
-      accessThis: "Home"
-    }
+  data: function () {
+    return {
+      accessThis: "Home",
+      isMobile: false,
+    };
   },
   name: "App",
   components: {
@@ -36,22 +44,23 @@ export default {
     ProjectsDone,
     ContactPage,
     OofPage,
+    AboutMe,
   },
   methods: {
-    getPage(value){
+    getPage(value) {
       this.accessThis = value;
-    }
+    },
   },
 };
 </script>
 
 <style>
-html{
+html {
   background-color: #175588;
   width: auto;
   height: auto;
 }
-body{
+body {
   background-color: #175588;
 }
 .allHolder {
@@ -61,5 +70,4 @@ body{
   height: auto;
   background-color: #175588;
 }
-
 </style>
