@@ -58,9 +58,6 @@ export default {
   width: auto;
   text-align: left;
 }
-h1 {
-  text-color: aquamarine;
-}
 .shortDescription {
   margin: 4.5rem;
   margin-top: 0rem;

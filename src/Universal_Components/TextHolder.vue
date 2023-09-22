@@ -12,8 +12,8 @@
 export default {
   name: "TextHolder",
   props: {
-    data: String, // Define the 'data' prop and specify its type as String
-    componentType: String, // Define the 'componentType' prop and specify its type as String
+    data: String,
+    componentType: String,
     style: String,
   },
 };
