@@ -3,13 +3,19 @@
     <h1 class="ContactMe">Contact Me<br /></h1>
     <h1 class="PageDescriptor">You can contact me through Email:</h1>
     <div class="imgHolder">
-      <a href="mailto:2001aankit@gmail.com"><img src="../assets/gmail.png" /></a>
+      <a href="mailto:2001aankit@gmail.com"
+        ><img src="../assets/gmail.png" alt="Image In the wrong directory"
+      /></a>
     </div>
     <h1 class="Socials">Socials<br /></h1>
     <h1 class="PageDescriptor">Feel free to follow my socials:</h1>
     <div class="imgHolder">
-      <a href="https://www.linkedin.com/in/aankit-pokhrel/" target="_blank"><img src="../assets/linkedin.png" /></a>
-      <a href="https://www.instagram.com/aankit_pokhrel/" target="_blank"><img src="../assets/instagram.png" /></a>
+      <a href="https://www.linkedin.com/in/aankit-pokhrel/" target="_blank"
+        ><img src="../assets/linkedin.png" alt="Image In the wrong directory"
+      /></a>
+      <a href="https://www.instagram.com/aankit_pokhrel/" target="_blank"
+        ><img src="../assets/instagram.png" alt="Image In the wrong directory"
+      /></a>
     </div>
   </div>
 </template>

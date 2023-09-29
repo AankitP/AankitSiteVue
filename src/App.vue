@@ -20,6 +20,9 @@
       <OofPage v-else />
     </MainBox_Mobile>
   </div>
+  <div>
+    <Footer_ />
+  </div>
 </template>
 
 <script>
@@ -35,6 +38,9 @@ import AboutMe from "./Desktop_components/AboutMe.vue";
 // Import mobile components
 import Home_Mobile from "./Mobile_components/Home_Mobile.vue";
 import MainBox_Mobile from "./Mobile_components/Reusable/MainBox_Mobile.vue";
+
+//import universal components
+import Footer_ from "./Universal_Components/Footer.vue";
 
 const DeviceType = () =>
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -62,6 +68,7 @@ export default {
     AboutMe,
     Home_Mobile,
     MainBox_Mobile,
+    Footer_,
   },
   methods: {
     getPage(value) {

@@ -5,13 +5,17 @@
       These are some of the projects that I am currently Working on, or have
       worked on in the past
     </h1>
-    <div class="Projects">
+    <div
+      class="Projects"
+      v-for="(text, index) in HPText.ProjectPage"
+      :key="index"
+    >
       <ProjHolder
-        leftOrientation="true"
-        :description="HPText.ProjectPage.ProjectA.data.Description"
-        :title="HPText.ProjectPage.ProjectA.data.Title"
-        :img="HPText.ProjectPage.ProjectA.data.Images"
-        :link="HPText.ProjectPage.ProjectA.data.Link"
+        :leftOrientation="isEvenLetter(index.slice(-1)) ? true : false"
+        :description="text.data.Description"
+        :title="text.data.Title"
+        :img="text.data.Pic"
+        :link="text.data.Link"
       />
     </div>
   </div>
@@ -31,9 +35,11 @@ export default {
       HPText: HPText,
     };
   },
-  computed: {
-    holderClass() {
-      return this.leftOrientation ? "allHolderProj" : "allHolderProjLeft";
+  methods: {
+    isEvenLetter(letter) {
+      // Check if the letter is even based on its ASCII code
+      const letterCode = letter.charCodeAt(0);
+      return letterCode % 2 === 0;
     },
   },
 };

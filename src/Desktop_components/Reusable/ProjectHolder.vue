@@ -1,6 +1,6 @@
 <template>
   <slot>
-    <div :class="holderClass">
+    <div :class="[holderClass]">
       <div class="textHolderProj">
         <h3>
           Current Project:
@@ -10,7 +10,7 @@
         </h3>
         <h5>&emsp;{{ description }}</h5>
       </div>
-      <img :src="img" class="ProjImg" />
+      <img :src="usedImg" class="ProjImg" alt="Image Isn't working" />
     </div>
   </slot>
 </template>
@@ -18,7 +18,6 @@
 <script>
 export default {
   name: "ProjHolder",
-  setup() {},
   props: {
     leftOrientation: Boolean,
     description: String,
@@ -30,10 +29,13 @@ export default {
     holderClass() {
       return this.leftOrientation ? "allHolderProj" : "allHolderProjLeft";
     },
+    usedImg() {
+      // Corrected the dynamic import
+      return require(`../../assets/${this.img}`);
+    },
   },
 };
 </script>
-
 <style>
 .allHolderProj {
   display: flex;
