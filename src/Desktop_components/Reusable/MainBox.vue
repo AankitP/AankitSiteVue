@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 .holderBox {
-  margin: 4rem;
+  margin: 3rem;
   margin-right: 4rem;
   margin-left: 4rem;
   min-height: 80vh;

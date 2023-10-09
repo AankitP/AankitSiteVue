@@ -6,8 +6,6 @@
     <MainBox>
       <HomePage v-if="accessThis == 'Home'" />
       <ProjectsDone v-else-if="accessThis == 'Projects'" />
-      <ContactPage v-else-if="accessThis == 'Contact'" />
-      <AboutMe v-else-if="accessThis == 'AboutMe'" />
       <OofPage v-else />
     </MainBox>
   </div>
@@ -15,8 +13,6 @@
     <MainBox_Mobile>
       <Home_Mobile v-if="accessThis == 'Home'" />
       <ProjectsDone v-else-if="accessThis == 'Projects'" />
-      <ContactPage v-else-if="accessThis == 'Contact'" />
-      <AboutMe v-else-if="accessThis == 'AboutMe'" />
       <OofPage v-else />
     </MainBox_Mobile>
   </div>
@@ -31,9 +27,7 @@ import TopBar from "./Desktop_components/TopBar.vue";
 import MainBox from "./Desktop_components/Reusable/MainBox.vue";
 import HomePage from "./Desktop_components/Home.vue";
 import ProjectsDone from "./Desktop_components/Projects.vue";
-import ContactPage from "./Desktop_components/ContactAndSocials.vue";
 import OofPage from "./Desktop_components/404Page.vue";
-import AboutMe from "./Desktop_components/AboutMe.vue";
 
 // Import mobile components
 import Home_Mobile from "./Mobile_components/Home_Mobile.vue";
@@ -63,9 +57,7 @@ export default {
     MainBox,
     HomePage,
     ProjectsDone,
-    ContactPage,
     OofPage,
-    AboutMe,
     Home_Mobile,
     MainBox_Mobile,
     Footer_,
