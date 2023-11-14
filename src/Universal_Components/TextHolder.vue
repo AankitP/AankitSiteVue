@@ -30,4 +30,21 @@ export default {
   background-color: #08355a;
   border-radius: 1rem;
 }
+h1 {
+  color: #10c55c;
+  font-size: 500%;
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: antiquewhite;
+}
+h4 {
+  color: white;
+}
+p {
+  color: aquamarine;
+  font-size: 20px;
+}
 </style>
