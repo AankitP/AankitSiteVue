@@ -6,15 +6,13 @@
 
 <script>
 export default {
-  name: "MainBox",
+  name: "MainBox_Mobile",
 };
 </script>
 
 <style scoped>
 .holderBox {
-  margin: 4rem;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  margin: 1rem;
   min-height: 80vh;
   height: auto;
   display: flex;

@@ -1,26 +1,28 @@
 <template>
   <div class="aboutMe">
-    <p class="helloWorld">Hello World, My Name is</p>
-    <h1 class="myName">Aankit Pokhrel.<br /></h1>
-    <h1 class="hook">And I Build Things for Fun.</h1>
-    <div class="shortDescription">
-      <p>
-        I hold a Bachelor's degree in Cyber Engineering from Louisiana Tech University<br/> 
-        and currently work at Pepsico. My journey in computer science began in high school,<br/> 
-        where I started with JavaScript and later shifted to Java. With over 8.5 years of <br/>
-        programming experience, I have developed strong programming and problem-solving skills, <br/>
-        enabling me to handle any programming task proficiently.<br/>
-      </p>
+    <!-- to iterate through the text -->
+    <div v-for="(text, key) in HPText.HomePageText" :key="key">
+      <TextHolder :data="text.data" :componentType="text.type" />
     </div>
-  </div>
-  <div class="picOfMe">
-    <img src="./../assets/IMG_5899.jpg" />
+    <img src="../assets/IMG_5899.jpg" alt="Your Image Alt Text" />
   </div>
 </template>
 
 <script>
+// import Vue from "vue"; // Import Vue
+import TextHolder from "./../Universal_Components/TextHolder.vue";
+import HPText from "./../assets/TextFiles/SiteText.json";
+
 export default {
-  name: "HomePage",
+  name: "HomePage_Mobile",
+  components: {
+    TextHolder,
+  },
+  data() {
+    return {
+      HPText: HPText,
+    };
+  },
 };
 </script>
 
@@ -30,7 +32,7 @@ export default {
   justify-content: left;
   text-align: left;
   color: aquamarine;
-  font-size: 200%;
+  font-size: 150%;
 }
 .hook {
   align-content: left;
@@ -64,9 +66,10 @@ export default {
 }
 
 .picOfMe {
-  max-height: 40rem;
-  max-width: 25rem;
+  max-height: 50vh;
+  max-width: 65vw;
   margin-right: 10vw;
+  align: center;
 }
 
 img {

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "ProjHolder",
+  name: "ProjHolder_Mobile",
   setup() {},
 };
 </script>

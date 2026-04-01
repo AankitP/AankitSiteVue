@@ -2,38 +2,37 @@
   <div class="header">
     <h1 class="myName">Aankit Pokhrel</h1>
     <div class="bold-color">
-      <button @click="displayComponent('Home')" class="LinkedButton">Home</button>
-      <button @click="displayComponent('Projects')" class="LinkedButton">Projects</button>
-      <button href="https://github.com/AankitP" @click="OpenGitHub" class="LinkedButton">Github</button>
-      <button @click="displayComponent('AboutMe')" class="LinkedButton">About Me</button>
-      <button @click="displayComponent('Contact')" class="LinkedButton">Contact</button>
+      <button @click="displayComponent('Home')" class="LinkedButton">
+        Home
+      </button>
+      <button @click="displayComponent('Projects')" class="LinkedButton">
+        Projects
+      </button>
       <button @click="OpenResume" class="LinkedButton">Resume</button>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   methods: {
     Clicked() {
       console.log("Clicked");
     },
-    OpenResume(){
+    OpenResume() {
       console.log("Clicked Open Resume");
-      window.open("Aankit_Pokhrel_Resume.pdf", '_blank');
+      window.open("Aankit_Pokhrel_Resume.pdf", "_blank");
     },
-    OpenGitHub(){
+    OpenGitHub() {
       console.log("Clicked Open GitHub");
-      window.open("https://github.com/AankitP", '_blank');
+      window.open("https://github.com/AankitP", "_blank");
     },
-    displayComponent(componentToShow){
-      this.$emit('clicked', componentToShow);
+    displayComponent(componentToShow) {
+      this.$emit("clicked", componentToShow);
     },
   },
   name: "TopBar",
 };
-
 </script>
 
 <style scoped>
@@ -43,7 +42,7 @@ export default {
   display: flex;
   list-style: none;
   align-items: center;
-  margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 .header {
   position: flex;
@@ -65,7 +64,7 @@ h1 {
   line-height: 2rem;
 }
 
-.LinkedButton{
+.LinkedButton {
   background: none;
   border: none;
   color: aquamarine;
@@ -82,7 +81,7 @@ h1 {
   display: flex;
 }
 
-body{
+body {
   margin: 0 !important;
   padding: 0 !important;
 }
