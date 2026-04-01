@@ -81,18 +81,18 @@ export default {
 
 <style>
 html {
-  background-color: #175588;
+  background-color: #f3f3f3;
   width: auto;
   height: auto;
 }
 body {
-  background-color: #175588;
+  background-color: #f3f3f3;
 }
 .allHolderDesktop {
   padding: 0 !important;
   margin: 0 !important;
   /* min-width: 100rem; */
   height: auto;
-  background-color: #175588;
+  background-color: #f3f3f3;
 }
 </style>

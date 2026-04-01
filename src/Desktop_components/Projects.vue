@@ -50,7 +50,7 @@ export default {
   align-content: left;
   justify-content: left;
   text-align: left;
-  color: #47ff94;
+  color: #000000;
   font-size: 200%;
   margin-left: 3%;
 }
@@ -58,7 +58,7 @@ export default {
   align-content: left;
   justify-content: left;
   text-align: left;
-  color: #10c55c;
+  color: #000000;
   font-size: 500%;
 }
 .Content {

@@ -12,7 +12,7 @@
     </button>
     <button class="LinkedButton">
       <a href="https://github.com/AankitP" target="_blank"
-        ><img src="../assets/github-mark-white.png" class="FooterImage"
+        ><img src="../assets/github-mark.svg" class="FooterImage"
       /></a>
     </button>
     <button class="LinkedButton">
@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .footer {
   position: flex;
-  background-color: #08355a;
+  background-color: #efefef;
   width: 100%;
   height: 4rem;
   display: flex;
